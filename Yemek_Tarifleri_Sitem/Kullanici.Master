@@ -7,18 +7,33 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style="width: 700px; height: 150px; margin-left: 300px; background-color: #CCFF66;">
+        <div style="width: 700px; height: 150px; margin-left: 300px; background-color: cadetblue;">
             &nbsp;
         </div>
         <div style="margin-left: 300px; width: 700px; height: 20px;">&nbsp;</div>
-        <div style="margin-left: 300px; width: 700px; height: 20px; background-color: #CCCCFF;">&nbsp;</div>
+        <div style="margin-left: 300px; width: 700px; height: 25px; background-color: cadetblue;">
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style2"><a href="AnaSayfa.aspx">ANA SAYFA</a></td>
+                    <td class="auto-style2"><a href="GununYemegi.aspx">GÜNÜN YEMEĞİ</a></td>
+                    <td class="auto-style2"><a href="TarifOner.aspx">TARİF ÖNER</a></td>
+                    <td class="auto-style2"><a href="Hakkimizda.aspx">HAKKIMIZDA</a></td>
+                    <td class="auto-style2"><a href="iletisim.aspx">İLETİŞİM</a></td>
+                </tr>
+            </table>
+        </div>
         <div style="margin-left: 300px; width: 700px; height: 20px;">&nbsp;</div>
 
-        <div style="margin-left: 300px; width: 200px; height: 200px; background-color: #FFFF99;">
-            <div style="margin-left: 250px; height: 350px; width: 450px; background-color: #FF99CC;">
+        <div style="margin-left: 300px; width: 200px; height: 200px; background-color: cadetblue;">
+            <div style="margin-left: 250px; height: 350px; width: 450px; background-color: cadetblue;">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
             </div>
