@@ -38,7 +38,7 @@
     <tr>
         <td class="auto-style4">Yapılış:</td>
         <td>
-            <asp:TextBox ID="TxtYapılış" runat="server" Height="150px" TextMode="MultiLine" Width="250px"></asp:TextBox>
+            <asp:TextBox ID="TxtYapilis" runat="server" Height="150px" TextMode="MultiLine" Width="250px"></asp:TextBox>
         </td>
     </tr>
     <tr>
@@ -62,7 +62,7 @@
     <tr>
         <td>&nbsp;</td>
         <td>
-            <asp:Button ID="BtnTarifOner" runat="server" BackColor="#FFFFCC" Height="40px" style="font-weight: 700; font-style: italic; margin-left: 50px" Text="Tarif Öner" Width="150px" />
+            <asp:Button ID="BtnTarifOner" runat="server" BackColor="#FFFFCC" Height="40px" style="font-weight: 700; font-style: italic; margin-left: 50px" Text="Tarif Öner" Width="150px" OnClick="BtnTarifOner_Click" />
         </td>
     </tr>
 </table>

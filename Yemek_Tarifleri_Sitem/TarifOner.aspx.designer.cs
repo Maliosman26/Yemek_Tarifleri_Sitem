@@ -33,13 +33,13 @@ namespace Yemek_Tarifleri_Sitem
         protected global::System.Web.UI.WebControls.TextBox TxtMalzemeler;
 
         /// <summary>
-        /// TxtYapılış control.
+        /// TxtYapilis control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtYapılış;
+        protected global::System.Web.UI.WebControls.TextBox TxtYapilis;
 
         /// <summary>
         /// FileUpload1 control.
