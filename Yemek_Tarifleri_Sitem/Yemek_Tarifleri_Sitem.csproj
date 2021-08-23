@@ -74,6 +74,7 @@
     <Content Include="KategoriDetay.aspx" />
     <Content Include="Kullanici.css" />
     <Content Include="Resimler\blogpicture.jpg" />
+    <Content Include="Resimler\foodbanner.jpg" />
     <Content Include="Resimler\mucver.jpg" />
     <Content Include="TarifOner.aspx" />
     <Content Include="Web.config" />

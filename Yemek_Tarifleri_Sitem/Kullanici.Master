@@ -24,7 +24,7 @@
 <body>
     <form id="form1" runat="server">
         <div style="width: 700px; height: 150px; margin-left: 300px; background-color: #ce7171;">
-            &nbsp;
+            <asp:Image ID="Image1" runat="server" Height="162px" ImageUrl="~/Resimler/foodbanner.jpg" Width="701px" />
         </div>
         <div style="margin-left: 300px; width: 700px; height: 20px;">&nbsp;</div>
         <div style="margin-left: 300px; width: 700px; height: 40px; background-color: #FFFFFF;">
