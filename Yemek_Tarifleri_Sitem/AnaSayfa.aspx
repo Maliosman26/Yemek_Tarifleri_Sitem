@@ -1,9 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Kullanici.Master" AutoEventWireup="true" CodeBehind="AnaSayfa.aspx.cs" Inherits="Yemek_Tarifleri_Sitem.AnaSayfa" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style3 {
             width: 100%;
         }
+
         .auto-style4 {
             height: 20px;
             background-color: #FFCC99;
@@ -16,8 +18,12 @@
             <table class="auto-style3">
                 <tr>
                     <td class="auto-style4"><strong>
-                        <asp:Label ID="Label3" runat="server" Text='<%# Eval("YemekAd") %>'></asp:Label>
-                        </strong></td>
+
+
+                       <a href="YemekDetay.aspx?Yemekid=<%#Eval("Yemekid")%>"><asp:Label ID="Label3" runat="server" Text='<%# Eval("YemekAd") %>' Font-Bold="True" Font-Size="X-Large"></asp:Label></a>
+                    
+                        
+                    </td>
                 </tr>
                 <tr>
                     <td>Malzemeler:
@@ -33,7 +39,7 @@
                     <td>Eklenme Tarihi:
                         <asp:Label ID="Label6" runat="server" Text='<%# Eval("YemekTarih") %>'></asp:Label>
                         &nbsp;- <strong>Puan:</strong> <em>
-                        <asp:Label ID="Label7" runat="server" Text='<%# Eval("YemekPuan") %>'></asp:Label>
+                            <asp:Label ID="Label7" runat="server" Text='<%# Eval("YemekPuan") %>'></asp:Label>
                         </em></td>
                 </tr>
                 <tr>
