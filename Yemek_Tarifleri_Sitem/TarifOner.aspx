@@ -26,43 +26,43 @@
     <tr>
         <td class="auto-style5"><strong>Tarif Ad:</strong></td>
         <td>
-            <asp:TextBox ID="TxtTarifAd" runat="server" Width="250px"></asp:TextBox>
+            <asp:TextBox ID="TxtTarifAd" runat="server" Width="250px" CssClass="tb5"></asp:TextBox>
         </td>
     </tr>
     <tr>
         <td class="auto-style4">Malzemeler:</td>
         <td>
-            <asp:TextBox ID="TxtMalzemeler" runat="server" Height="80px" TextMode="MultiLine" Width="250px"></asp:TextBox>
+            <asp:TextBox ID="TxtMalzemeler" runat="server" Height="80px" TextMode="MultiLine" Width="250px" CssClass="tb5"></asp:TextBox>
         </td>
     </tr>
     <tr>
         <td class="auto-style4">Yapılış:</td>
         <td>
-            <asp:TextBox ID="TxtYapilis" runat="server" Height="150px" TextMode="MultiLine" Width="250px"></asp:TextBox>
+            <asp:TextBox ID="TxtYapilis" runat="server" Height="150px" TextMode="MultiLine" Width="250px" CssClass="tb5"></asp:TextBox>
         </td>
     </tr>
     <tr>
         <td class="auto-style4">Resim:</td>
         <td>
-            <asp:FileUpload ID="FileUpload1" runat="server" Width="250px" />
+            <asp:FileUpload ID="FileUpload1" runat="server" Width="250px" CssClass="tb5" />
         </td>
     </tr>
     <tr>
         <td class="auto-style4">Tarif Öneren:</td>
         <td>
-            <asp:TextBox ID="TxtTarifOneren" runat="server" Width="250px"></asp:TextBox>
+            <asp:TextBox ID="TxtTarifOneren" runat="server" Width="250px" CssClass="tb5"></asp:TextBox>
         </td>
     </tr>
     <tr>
         <td class="auto-style4">Mail Adresi:</td>
         <td>
-            <asp:TextBox ID="TxtMailAdresi" runat="server" TextMode="Email" Width="250px"></asp:TextBox>
+            <asp:TextBox ID="TxtMailAdresi" runat="server" TextMode="Email" Width="250px" CssClass="tb5"></asp:TextBox>
         </td>
     </tr>
     <tr>
         <td>&nbsp;</td>
         <td>
-            <asp:Button ID="BtnTarifOner" runat="server" BackColor="#FFFFCC" Height="40px" style="font-weight: 700; font-style: italic; margin-left: 50px" Text="Tarif Öner" Width="150px" OnClick="BtnTarifOner_Click" />
+            <asp:Button ID="BtnTarifOner" runat="server" BackColor="#FFFFCC" Height="40px" style="font-weight: 700; font-style: italic; margin-left: 50px" Text="Tarif Öner" Width="150px" OnClick="BtnTarifOner_Click" CssClass="fb8" />
         </td>
     </tr>
 </table>
