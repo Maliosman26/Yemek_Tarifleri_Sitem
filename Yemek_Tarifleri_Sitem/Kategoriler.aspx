@@ -39,6 +39,9 @@
             font-weight: bold;
             font-size: 12pt;
         }
+        .auto-style12 {
+            text-align: right;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -67,7 +70,7 @@
                         <td class="auto-style5">
                             <asp:Image ID="Image4" runat="server" Height="30px" ImageUrl="~/İconlar/delete.png" Width="30px" />
                         </td>
-                        <td class="auto-style3">
+                        <td class="auto-style12">
                             <asp:Image ID="Image5" runat="server" Height="30px" ImageUrl="~/İconlar/update.png" Width="30px" />
                         </td>
                     </tr>
@@ -101,15 +104,15 @@
                 </td>
             </tr>
             <tr>
-                <td>KATEGORİ İCON:</td>
+                <td>KATEGORİ İkON:</td>
                 <td>
-                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                    <asp:FileUpload ID="FileUpload1" runat="server" />
                 </td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
                 <td><strong>
-                    <asp:Button ID="Button5" runat="server" CssClass="auto-style11" Text="Ekle" Width="100px" />
+                    <asp:Button ID="BtnEkle" runat="server" CssClass="auto-style11" Text="Ekle" Width="100px" />
                     </strong></td>
             </tr>
         </table>
