@@ -68,7 +68,7 @@
                             <asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAd") %>'></asp:Label>
                         </td>
                         <td class="auto-style5">
-                            <asp:Image ID="Image4" runat="server" Height="30px" ImageUrl="~/İconlar/delete.png" Width="30px" />
+                           <a href="Kategoriler.aspx?Kategoriid=<%# Eval("Kategoriid") %>&islem=sil"><asp:Image ID="Image4" runat="server" Height="30px" ImageUrl="~/İconlar/delete.png" Width="30px" /></a>
                         </td>
                         <td class="auto-style12">
                            <a href="KategoriDuzenle.aspx?Kategoriid=<%#Eval("Kategoriid")%>"><asp:Image ID="Image5" runat="server" Height="30px" ImageUrl="~/İconlar/update.png" Width="30px" /></a> 
@@ -112,7 +112,7 @@
             <tr>
                 <td>&nbsp;</td>
                 <td><strong>
-                    <asp:Button ID="BtnEkle" runat="server" CssClass="auto-style11" Text="Ekle" Width="100px" />
+                    <asp:Button ID="BtnEkle" runat="server" CssClass="auto-style11" Text="Ekle" Width="100px" OnClick="BtnEkle_Click1" />
                     </strong></td>
             </tr>
         </table>
