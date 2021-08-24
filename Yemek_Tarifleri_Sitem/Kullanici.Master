@@ -19,6 +19,9 @@
             font-size: small;
             text-align: center;
         }
+        .auto-style3 {
+            text-align: left;
+        }
     </style>
 </head>
 <body>
@@ -42,7 +45,7 @@
         <div style="margin-left: 300px; width: 700px; height: auto;">
             
 
-            <div style="width: 200px; float: left; height: auto; background-color: #ce7171; margin-left: 0px;">
+            <div style="width: 200px; float: left; height: auto; background-color: #ce7171; margin-left: 0px;" class="auto-style3">
                 <div class="auto-style3">
                     <strong style="font-size: large">KATEGORİLER</strong><br />
                     <br />

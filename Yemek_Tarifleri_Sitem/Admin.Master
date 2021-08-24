@@ -16,6 +16,9 @@
         .auto-style2 {
             font-size: x-large;
         }
+        .auto-style3 {
+            text-align: left;
+        }
     </style>
 </head>
 <body>
