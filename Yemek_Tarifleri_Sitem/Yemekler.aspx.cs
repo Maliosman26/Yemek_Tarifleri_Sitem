@@ -13,6 +13,7 @@ namespace Yemek_Tarifleri_Sitem
         sqlsinif bgl = new sqlsinif();
         protected void Page_Load(object sender, EventArgs e)
         {
+
             Panel2.Visible = false;
             Panel4.Visible = false;
 
@@ -21,6 +22,18 @@ namespace Yemek_Tarifleri_Sitem
             SqlDataReader dr = komut.ExecuteReader();
             DataList2.DataSource = dr;
             DataList2.DataBind();
+
+            //Kategori Listesi
+            SqlCommand komut2 = new SqlCommand("Select * from Tbl_Kategoriler", bgl.baglanti());
+            SqlDataReader dr2 = komut2.ExecuteReader();
+
+            DropDownList1.DataTextField = "KategoriAd";
+            DropDownList1.DataValueField = "Kategoriid";
+
+            DropDownList1.DataSource = dr2;
+            DropDownList1.DataBind();
+
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)
