@@ -16,17 +16,31 @@ namespace Yemek_Tarifleri_Sitem
         {
             id = Request.QueryString["Yorumid"];
 
-            SqlCommand komut = new SqlCommand("Select YorumAdSoyad,YorumMail,Yorumicerik,YemekAd From Tbl_Yorumlar inner join Tbl_Yemekler on Tbl_Yorumlar.yemekid=Tbl_Yemekler.yemekid where yorumid=@p1", bgl.baglanti());
-            komut.Parameters.AddWithValue("@p1", id);
-            SqlDataReader dr = komut.ExecuteReader();
-            while(dr.Read())
+            if (Page.IsPostBack == false)
             {
-                TxtAdSoyad.Text = dr[0].ToString();
-                TxtMail.Text = dr[1].ToString();
-                Txticerik.Text = dr[2].ToString();
-                TxtYemek.Text = dr[3].ToString();
+                SqlCommand komut = new SqlCommand("Select YorumAdSoyad,YorumMail,Yorumicerik,YemekAd From Tbl_Yorumlar inner join Tbl_Yemekler on Tbl_Yorumlar.yemekid=Tbl_Yemekler.yemekid where yorumid=@p1", bgl.baglanti());
+                komut.Parameters.AddWithValue("@p1", id);
+                SqlDataReader dr = komut.ExecuteReader();
+                while (dr.Read())
+                {
+                    TxtAdSoyad.Text = dr[0].ToString();
+                    TxtMail.Text = dr[1].ToString();
+                    Txticerik.Text = dr[2].ToString();
+                    TxtYemek.Text = dr[3].ToString();
+                }
+                bgl.baglanti().Close();
             }
+        }
+
+        protected void BtnOnayla_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("Update Tbl_yorumlar set yorumicerik=@p1,yorumonay=@p2 where yorumid=@p3", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", Txticerik.Text);
+            komut.Parameters.AddWithValue("@p2", "True");
+            komut.Parameters.AddWithValue("@p3", id);
+            komut.ExecuteNonQuery();
             bgl.baglanti().Close();
+
         }
     }
 }
