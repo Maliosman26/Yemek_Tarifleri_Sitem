@@ -7,9 +7,15 @@
         }
         .auto-style5 {
             font-size: large;
+            background-color: #00CCFF;
         }
         .auto-style6 {
             text-align: justify;
+        }
+        .auto-style7 {
+            font-weight: bold;
+            font-size: large;
+            background-color: #CCCCCC;
         }
     </style>
 </asp:Content>
@@ -48,6 +54,14 @@
             <td>&nbsp;</td>
             <td class="auto-style6">
                 <asp:Button ID="Button1" runat="server" CssClass="auto-style5" Text="Güncelle" Width="250px" OnClick="Button1_Click" />
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td class="auto-style6">
+                <strong>
+                <asp:Button ID="Button2" runat="server" CssClass="auto-style7" OnClick="Button2_Click" Text="Günün Yemeği Seç" Width="250px" />
+                </strong>
             </td>
         </tr>
     </table>
