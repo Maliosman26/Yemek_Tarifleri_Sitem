@@ -69,9 +69,16 @@
                     </td>
                 </tr>
                 <tr>
+                    <td class="auto-style9"><strong>Kategori:</strong></td>
+                    <td class="auto-style8">
+                        <asp:DropDownList ID="DropDownList1" runat="server" Width="200px">
+                        </asp:DropDownList>
+                    </td>
+                </tr>
+                <tr>
                     <td class="auto-style7">&nbsp;</td>
                     <td class="auto-style8"><strong>
-                        <asp:Button ID="Button1" runat="server" CssClass="auto-style10" Height="26px" Text="Onayla" Width="209px" />
+                        <asp:Button ID="Button1" runat="server" CssClass="auto-style10" Height="26px" OnClick="Button1_Click" Text="Onayla" Width="209px" />
                         </strong></td>
                 </tr>
         </table>
