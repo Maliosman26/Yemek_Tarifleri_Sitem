@@ -17,6 +17,9 @@
             font-size: large;
             background-color: #CCCCCC;
         }
+    .auto-style8 {
+        text-align: right;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -48,6 +51,12 @@
             <td>
                 <asp:DropDownList ID="DropDownList1" runat="server" Height="20px" Width="256px">
                 </asp:DropDownList>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style8"><strong>Yemek Görüntü:</strong></td>
+            <td class="auto-style6">
+                <asp:FileUpload ID="FileUpload1" runat="server" Width="250px" />
             </td>
         </tr>
         <tr>

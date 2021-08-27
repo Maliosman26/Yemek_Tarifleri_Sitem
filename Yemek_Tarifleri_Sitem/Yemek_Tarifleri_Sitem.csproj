@@ -82,8 +82,11 @@
     <Content Include="Mesajlar.aspx" />
     <Content Include="Resimler\blogpicture.jpg" />
     <Content Include="Resimler\foodbanner.jpg" />
+    <Content Include="Resimler\korisoslumakarna.jpg" />
     <Content Include="Resimler\login.png" />
+    <Content Include="Resimler\mercimekcorbasi.jpg" />
     <Content Include="Resimler\mucver.jpg" />
+    <Content Include="Resimler\zeytinyaglibarbunya.jpg" />
     <Content Include="Tarifler.aspx" />
     <Content Include="TarifOner.aspx" />
     <Content Include="TarifOnerDetay.aspx" />
